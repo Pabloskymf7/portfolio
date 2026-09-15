@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/Button";
+
 export default function Home() {
   return (
     <main className="flex flex-1 flex-col items-center justify-center gap-6 px-6 text-center">
@@ -10,9 +12,11 @@ export default function Home() {
       <div className="rounded-lg border border-border bg-surface px-6 py-4">
         Esto es una superficie (surface) con borde (border)
       </div>
-      <a href="#" className="font-medium text-accent hover:underline">
-        Esto es un enlace de acento
-      </a>
+      <div className="flex gap-3">
+        <Button variant="primary">Ver proyectos</Button>
+        <Button variant="secondary">Descargar CV</Button>
+        <Button variant="ghost" size="sm">Contacto</Button>
+      </div>
     </main>
   );
 }
